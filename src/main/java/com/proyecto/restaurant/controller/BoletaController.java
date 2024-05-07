@@ -15,7 +15,7 @@ import com.proyecto.restaurant.entity.Boleta;
 import com.proyecto.restaurant.service.BoletaService;
 
 @RestController
-@RequestMapping("/boleta")
+@RequestMapping(path = "/boleta")
 public class BoletaController {
 
 	@Autowired

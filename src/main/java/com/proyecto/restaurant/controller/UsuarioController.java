@@ -16,7 +16,7 @@ import com.proyecto.restaurant.entity.Usuario;
 import com.proyecto.restaurant.service.UsuarioService;
 
 @RestController
-@RequestMapping("/usuario")
+@RequestMapping(path = "/usuario")
 public class UsuarioController {
 
 	@Autowired
@@ -46,4 +46,5 @@ public class UsuarioController {
 	public void deleteById(@PathVariable("codigo") Integer codigo) {
 		servicioUsuario.deleteById(codigo);
 	}
+	
 }

@@ -16,7 +16,7 @@ import com.proyecto.restaurant.entity.Menu;
 import com.proyecto.restaurant.service.MenuService;
 
 @RestController
-@RequestMapping("/menu")
+@RequestMapping(path = "/menu")
 public class MenuController {
 
 	@Autowired
