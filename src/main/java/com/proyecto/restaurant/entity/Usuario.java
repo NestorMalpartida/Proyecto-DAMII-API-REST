@@ -35,10 +35,10 @@ public class Usuario {
 	
 	@Column(name = "pwd")
 	private String contrasena;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "usuario")
-	private List<Boleta> listaBoleta;
+	private List<Sede> listaSede;
 
 	public Integer getCodigo() {
 		return codigo;
@@ -88,12 +88,6 @@ public class Usuario {
 		this.contrasena = contrasena;
 	}
 
-	public List<Boleta> getListaBoleta() {
-		return listaBoleta;
-	}
-
-	public void setListaBoleta(List<Boleta> listaBoleta) {
-		this.listaBoleta = listaBoleta;
-	}
+	
 	
 }
