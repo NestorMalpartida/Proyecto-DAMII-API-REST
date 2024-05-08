@@ -33,4 +33,8 @@ public class SedeService {
 	public void deleteById(Integer codigo) {
 		repo.deleteById(codigo);
 	}
+	
+	public Sede findSedeByUsuario(Integer codigo) {
+		return repo.findSedeByUsuario(codigo);
+	}
 }

@@ -46,4 +46,10 @@ public class SedeController {
 	public void deleteById(@PathVariable("codigo") Integer codigo) {
 		servicioSede.deleteById(codigo);
 	}
+	
+	@GetMapping("/findSedeByUsuario/{codigo}")
+	public Sede findSedeByUsuario(@PathVariable("codigo")Integer codigo) {
+		return findSedeByUsuario(codigo);
+	}
+	
 }

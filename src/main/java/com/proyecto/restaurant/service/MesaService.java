@@ -33,4 +33,8 @@ public class MesaService {
 	public void deleteById(Integer codigo) {
 		repo.deleteById(codigo);
 	}
+	
+	public List<Mesa> findMesaBySede(Integer codigo){
+		return repo.findMesaBySede(codigo);
+	}
 }

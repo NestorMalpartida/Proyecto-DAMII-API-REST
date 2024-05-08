@@ -47,4 +47,9 @@ public class MesaController {
 		servicioMesa.deleteById(codigo);
 	}
 	
+	@GetMapping("/findMesaBySede/{codigo}")
+	public List<Mesa> findMesaBySede(@PathVariable("codigo") Integer codigo){
+		return servicioMesa.findMesaBySede(codigo);
+	}
+	
 }
