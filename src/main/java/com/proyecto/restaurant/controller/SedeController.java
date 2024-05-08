@@ -16,7 +16,7 @@ import com.proyecto.restaurant.entity.Sede;
 import com.proyecto.restaurant.service.SedeService;
 
 @RestController
-@RequestMapping(path = "/menu")
+@RequestMapping(path = "/sede")
 public class SedeController {
 
 	@Autowired
